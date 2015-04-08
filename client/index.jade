@@ -1,0 +1,42 @@
+doctype html(colspan="4")
+html
+  head
+    meta(charset='utf-8')      
+    title Apollo
+    link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
+    link(rel='shortcut icon', href='/favicon.ico')
+  body
+    div#container
+      table#calc
+        tr
+          td#res(colspan="4")
+        tr
+          td#clear C
+          td#swsi +/-
+          td#per %
+          td#div /
+        tr
+          td#b7 7
+          td#b8 8
+          td#b9 9
+          td#tim x
+        tr
+          td#b4 4
+          td#b5 5
+          td#b6 6
+          td#min -
+        tr
+          td#b1 1
+          td#b2 2
+          td#b3 3
+          td#plus +
+        tr
+          td#b0(colspan="2") 0
+          td#pir .
+          td#eql =
+      table
+    script(src='/vendor/lodash/lodash.min.js')
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src=isProd ? '/index.min.js' : '/index.js')
+    
